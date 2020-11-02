@@ -2,7 +2,9 @@
 
 ![](https://github.com/pately/file-manager/workflows/Node.js%20CI/badge.svg)
 
-## Swagger API Documentation can be found on http://localhost:3000/api/
+## Minimal Swagger API Documentation can be found on http://localhost:3000/api/
+
+## App Runs on PORT 3000 by 
 
 # File Manager REST Web-Service
 Web service with following functionality 
