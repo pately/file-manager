@@ -1,3 +1,4 @@
+import * as fs from 'fs';
 import {
   Controller,
   Post,
@@ -21,6 +22,7 @@ import { FileInterceptor } from '@nestjs/platform-express';
 import { diskStorage } from 'multer';
 import { editFileName, fileFilter } from '../utils/file-upload.utils';
 import { FileService } from './file.service';
+import { config } from '../config';
 
 class FileUploadDto {
   @ApiProperty({ type: 'string', format: 'text' })
@@ -30,7 +32,11 @@ class FileUploadDto {
 @ApiTags('File')
 @Controller('file')
 export class FileController {
-  constructor(private readonly fileService: FileService) {}
+  constructor(private readonly fileService: FileService) {
+    if (!fs.existsSync(config.fileDirectory)) {
+      fs.mkdirSync(config.fileDirectory);
+    }
+  }
 
   @Post('upload')
   @UseInterceptors(
