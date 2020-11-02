@@ -1,5 +1,6 @@
 ## Description
-https://github.com/pately/file-manager/workflows/Node.js%20CI/badge.svg
+
+![](https://github.com/pately/file-manager/workflows/Node.js%20CI/badge.svg)
 
 ## Swagger API Documentation can be found on http://localhost:3000/api/
 
