@@ -4,7 +4,7 @@
 
 ## Minimal Swagger API Documentation can be found on http://localhost:3000/api/
 
-## App Runs on PORT 3000 by 
+## App Runs on PORT 3000 by default
 
 # File Manager REST Web-Service
 Web service with following functionality 
